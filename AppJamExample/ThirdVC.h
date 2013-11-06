@@ -10,5 +10,5 @@
 
 @interface ThirdVC : UIViewController <UITextFieldDelegate>
 
--(id)initWithDismissButton;
+-(id)initWithDismissButton; //this method is now public for use everywhere
 @end

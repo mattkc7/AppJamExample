@@ -15,9 +15,6 @@
     self = [super init];
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
-//        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bkg1.jpg"]];
-//        [self.view addSubview:backgroundImage];
-//        [self.view sendSubviewToBack:backgroundImage];
         
         //get the tab bar item and give it a label
         UITabBarItem *tbi = [self tabBarItem];

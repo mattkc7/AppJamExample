@@ -21,17 +21,16 @@
     
     //Create the tabBarController
 	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
     FirstVC *firstVC = [[FirstVC alloc] init];
     SecondVC *secondVC = [[SecondVC alloc] init];
     
     UINavigationController *vc0 = [[UINavigationController alloc] initWithRootViewController:secondVC];
-    
     NSArray *viewControllers = [NSArray arrayWithObjects:firstVC, vc0, nil];
     
     [tabBarController setViewControllers:viewControllers];
     
     [self.window setRootViewController:tabBarController];
-
     [self.window makeKeyAndVisible];
     return YES;
 }

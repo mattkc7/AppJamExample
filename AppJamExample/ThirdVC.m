@@ -50,6 +50,14 @@
 
 -(void)userPressedDismiss
 {
+    /*
+    
+     this is crucial when you present a VC from another VC
+     (one that is not contained in a UINavigationController).
+     This will remove the VC from the stack.
+    
+     */
+     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
